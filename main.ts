@@ -4,6 +4,7 @@ input.onSound(DetectedSound.Loud, function () {
     } else {
         muze_jet = 0
     }
+    basic.pause(500)
 })
 let muze_jet = 0
 muze_jet = 0
