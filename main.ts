@@ -1,5 +1,9 @@
 input.onSound(DetectedSound.Loud, function () {
-    muze_jet = 1
+    if (muze_jet == 0) {
+        muze_jet = 1
+    } else {
+        muze_jet = 0
+    }
 })
 let muze_jet = 0
 muze_jet = 0
@@ -19,7 +23,9 @@ basic.forever(function () {
             cuteBot.motors(11, 24)
         }
         if (cuteBot.tracking(cuteBot.TrackingState.L_R_line)) {
-            cuteBot.motors(24, 24)
+            cuteBot.motors(15, 15)
         }
+    } else {
+        cuteBot.stopcar()
     }
 })
