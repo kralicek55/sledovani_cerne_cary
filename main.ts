@@ -4,10 +4,9 @@ input.onSound(DetectedSound.Loud, function () {
     } else {
         muze_jet = 0
     }
-    basic.pause(500)
+    basic.showNumber(muze_jet)
 })
 let muze_jet = 0
-input.setSoundThreshold(SoundThreshold.Loud, 49)
 muze_jet = 0
 basic.showLeds(`
     . . . # .
